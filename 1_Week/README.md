@@ -83,6 +83,7 @@ int main() {
 
 void f(int* a) {
 	(*a)++; // a++ will increment the value at the address where the pointer points at
+	a++; //Increments the pointer in the scope, but outside stays the same, because pointer is copy as parameter
 }
 
 int main() {
