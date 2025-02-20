@@ -15,5 +15,5 @@
 | 13 | Необходими функции в шаблонен клас/шаблонна функция. |
 | 14 | Smart Pointers - Memory allocation and deallocation in C++: `new`, `delete`. Issues with raw pointers (memory leaks, dangling pointers). Introduction to smart pointers (`std::unique_ptr`, `std::shared_ptr`, `std::weak_ptr`). |
 | 15 | Пример за използване на singleton и factory. Use of STL in OOP for more effective software design. Use `std::vector`, `std::map`, and `std::string` in the context of object-oriented programming. |
-| 15 - Bonus за Група III |Some GoF Design Patterns: <br> Creational DP: Prototype, Abstract Factory, Builder. <br> Structural DP: Composite, Decorator, Flyweight, Proxy, Adapter, Bridge, Facade. <br> Behavioral DP: Memento, Chain of responsibility, Command, Iterator, Visitor, Observer, Mediator, Template Method, Interpreter. <br> Dependency Injection| 
+| 15 - Bonus |Голяма част от GoF Design Patterns: <br> Creational DP: Prototype, Abstract Factory, Builder. <br> Structural DP: Composite, Decorator, Flyweight, Proxy, Adapter, Bridge, Facade. <br> Behavioral DP: Memento, Chain of responsibility, Command, Iterator, Visitor, Observer, Mediator, Template Method, Interpreter. <br> Dependency Injection| 
 
