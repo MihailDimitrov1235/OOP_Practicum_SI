@@ -1,3 +1,37 @@
+## StringStream
+```cpp
+int findOccur(const char* data, char ch) {
+	std::stringstream ss(data);
+	int count = 0;
+	while (!ss.eof())
+	{
+		char chCurr;
+		chCurr = ss.get();
+		if (ch == chCurr)
+		{
+			count++;
+		}
+	}
+	return count;
+}
+
+int getCountCols(const char* data) { // 213,5123,1231241|1,2,2|3,24,0 Useful to extract data with operator >> 
+	std::stringstream ss(data);
+	int count = 0;
+	while (!ss.eof())
+	{
+		int curr;
+		ss >> curr;
+		count++;
+		if (ss.get() == '|')
+		{
+			return count;
+		}
+	}
+	return count;
+}
+```
+
 ## **Задача 1. - stringstream** 
 ### Да се напише програма, която чете матрица от текстов файл от вида : 3,3,3|1,1,3|3,3,1, чете друга матрица в същия формат от втория файл и записва произведението им в нов файл.
 
