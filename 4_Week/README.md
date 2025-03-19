@@ -42,7 +42,7 @@
 int main() { 
   StringManipulator sm1, sm2("love"), sm3("<3", 3);
 
-  sm1.setStr("Hallo").replace('a', 'e).insert(", ").add(sm2).insert("!").add(sm3).print(); // Hello, love!<3<3<3
+  sm1.setStr("Hallo").replace('a', 'e').insert(", ").add(sm2).insert("!").add(sm3).print(); // Hello, love!<3<3<3
 
   return 0;
 }
