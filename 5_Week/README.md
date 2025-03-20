@@ -50,25 +50,43 @@ struct A
 **Задача 2.** Имате печатане в конструкторите и деструкторите на всички класове. Какво ще се изведе на конзолата след изпълнение на кода?
 
 ```c++
-struct X
-{
+struct A {
+    A() {
+        cout << "A()" << endl;
+    }
+
+    ~A() {
+        cout << "~A()" << endl;
+    }
+};
+
+struct B {
+    B() {
+        cout << "B()" << endl;
+    }
+
+    ~B() {
+        cout << "~B()" << endl;
+    }
+};
+
+struct X {
     A a;
     B b;
 
     X(): b(), a() 
     {
-        // Do stuff + print
+        cout << "X()" << endl;
     }
 
     ~X()
     {
-        // Do stuff + print
+        cout << "~X()" << endl;
     }
-}
+};
 
 
-int main()
-{
+int main() {
     X arr1[2];
     X arr2 = new X[2];
     return 0;
